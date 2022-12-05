@@ -1,4 +1,5 @@
-# University Project - Team of 6
+# University Project
+Team of 6
 
 ## System Overview
 <img width="1109" alt="image" src="https://user-images.githubusercontent.com/44605305/205709954-e5248262-4640-4621-a7d8-df12fd574824.png">
