@@ -1,0 +1,136 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+# Date created = 11:47:13  October 29, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		driver_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+# GPIO PIN ASSIGNMENT :
+set_location_assignment PIN_AD17 -to GPIO2
+set_location_assignment PIN_Y18 -to GPIO3
+set_location_assignment PIN_AK16 -to GPIO4
+set_location_assignment PIN_AH19 -to GPIO5
+set_location_assignment PIN_AC20 -to GPIO6
+set_location_assignment PIN_AG16 -to GPIO7
+set_location_assignment PIN_AE16 -to GPIO8
+set_location_assignment PIN_AG17 -to GPIO9
+set_location_assignment PIN_AA18 -to GPIO10
+set_location_assignment PIN_AF16 -to GPIO11
+set_location_assignment PIN_AE17 -to GPIO12
+set_location_assignment PIN_AA19 -to GPIO13
+set_location_assignment PIN_Y17 -to GPIO14
+set_location_assignment PIN_AC18 -to "-GPIO15"
+set_location_assignment PIN_AE18 -to X_GRN_BLK_PWM
+set_location_assignment PIN_AH17 -to X_RED_BLUE_PWM
+set_location_assignment PIN_AH18 -to X_BLUE_RED_PWM
+set_location_assignment PIN_AE19 -to X_BLK_GRN_PWM
+set_location_assignment PIN_AD19 -to Y_BLK_GRN_PWM
+set_location_assignment PIN_AK21 -to Y_GRN_BLK_PWM
+set_location_assignment PIN_AJ17 -to Y_RED_BLUE_PWM
+set_location_assignment PIN_AJ19 -to Y_BLUE_RED_PWM
+set_location_assignment PIN_AK19 -to GPIO24
+set_location_assignment PIN_AK18 -to GPIO25
+set_location_assignment PIN_AD20 -to GPIO26
+set_location_assignment PIN_AJ16 -to GPIO27
+
+# HEX display assignment:
+set_location_assignment PIN_AE26 -to dig0[0] -comment HEX0[0]
+set_location_assignment PIN_AE27 -to dig0[1]
+set_location_assignment PIN_AE28 -to dig0[2]
+set_location_assignment PIN_AG27 -to dig0[3]
+set_location_assignment PIN_AF28 -to dig0[4]
+set_location_assignment PIN_AG28 -to dig0[5]
+set_location_assignment PIN_AH28 -to dig0[6]
+set_location_assignment PIN_AJ29 -to dig1[0]
+set_location_assignment PIN_AH29 -to dig1[1]
+set_location_assignment PIN_AH30 -to dig1[2]
+set_location_assignment PIN_AG30 -to dig1[3]
+set_location_assignment PIN_AF29 -to dig1[4]
+set_location_assignment PIN_AF30 -to dig1[5]
+set_location_assignment PIN_AD27 -to dig1[6]
+set_location_assignment PIN_AB23 -to dig2[0]
+set_location_assignment PIN_AE29 -to dig2[1]
+set_location_assignment PIN_AD29 -to dig2[2]
+set_location_assignment PIN_AC28 -to dig2[3]
+set_location_assignment PIN_AD30 -to dig2[4]
+set_location_assignment PIN_AC29 -to dig2[5]
+set_location_assignment PIN_AC30 -to dig2[6]
+set_location_assignment PIN_AD26 -to dig3[0]
+set_location_assignment PIN_AC27 -to dig3[1]
+set_location_assignment PIN_AD25 -to dig3[2]
+set_location_assignment PIN_AC25 -to dig3[3]
+set_location_assignment PIN_AB28 -to dig3[4]
+set_location_assignment PIN_AB25 -to dig3[5]
+set_location_assignment PIN_AB22 -to dig3[6]
+set_location_assignment PIN_AA24 -to dig4[0]
+set_location_assignment PIN_Y23 -to dig4[1]
+set_location_assignment PIN_Y24 -to dig4[2]
+set_location_assignment PIN_W22 -to dig4[3]
+set_location_assignment PIN_W24 -to dig4[4]
+set_location_assignment PIN_V23 -to dig4[5]
+set_location_assignment PIN_W25 -to dig4[6]
+set_location_assignment PIN_V25 -to dig5[0]
+set_location_assignment PIN_AA28 -to dig5[1]
+set_location_assignment PIN_Y27 -to dig5[2]
+set_location_assignment PIN_AB27 -to dig5[3]
+set_location_assignment PIN_AB26 -to dig5[4]
+set_location_assignment PIN_AA26 -to dig5[5]
+set_location_assignment PIN_AA25 -to dig5[6]
+
+set_location_assignment PIN_V16 -to LED[0]
+set_location_assignment PIN_W16 -to LED[1]
+set_location_assignment PIN_V17 -to LED[2]
+set_location_assignment PIN_V18 -to LED[3]
+set_location_assignment PIN_W17 -to LED[4]
+set_location_assignment PIN_W19 -to LED[5]
+set_location_assignment PIN_Y19 -to LED[6]
+set_location_assignment PIN_W20 -to LED[7]
+
+set_location_assignment PIN_AA14 -to reset -comment KEY[0]
+set_location_assignment PIN_AF14 -to clk -comment CLOCK_50
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY driver
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:47:13  OCTOBER 29, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name BOARD "DE1-SoC Board"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE driver.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
